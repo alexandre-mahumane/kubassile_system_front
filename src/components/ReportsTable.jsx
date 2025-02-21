@@ -105,7 +105,6 @@ export const ReportsTable = () => {
   //   );
   // });
 
-  // Estatísticas
   const totalValor = filteredOrders.reduce(
     (acc, order) => acc + order.value,
     0
@@ -131,7 +130,6 @@ export const ReportsTable = () => {
           Relatório de Serviços
         </h2>
 
-        {/* Filtros e Pesquisa */}
         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
           <input
             type="text"
@@ -179,7 +177,6 @@ export const ReportsTable = () => {
           </div>
         </div>
 
-        {/* Tabela */}
         <div className="overflow-y-auto max-h-[60vh]">
           <table className="table-auto w-full border-collapse border border-gray-300">
             <thead className="bg-sky-500 text-white sticky top-0">
@@ -243,7 +240,6 @@ export const ReportsTable = () => {
           </table>
         </div>
 
-        {/* Estatísticas */}
         <div className="mt-6 border-t border-gray-300 pt-6">
           <h3 className="text-2xl font-semibold text-gray-700 mb-4">
             Estatísticas

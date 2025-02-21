@@ -19,7 +19,6 @@ export const ClientReportTable = () => {
     fetchData();
   }, []);
 
-  // Filtro de clientes
   const filteredClients = clients.filter((client) => {
     const registrationDate = new Date(client.createdAt);
     const matchesName = client.clientName
@@ -46,7 +45,6 @@ export const ClientReportTable = () => {
           Relatório de Clientes
         </h2>
 
-        {/* Filtros e Pesquisa */}
         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
           <input
             type="text"
@@ -75,7 +73,6 @@ export const ClientReportTable = () => {
           </div>
         </div>
 
-        {/* Tabela */}
         <div className="overflow-y-auto max-h-[60vh]">
           <table className="table-auto w-full border-collapse border border-gray-300">
             <thead className="bg-sky-500 text-white sticky top-0">

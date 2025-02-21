@@ -106,7 +106,6 @@ export const InputsClient = () => {
           Informações do Pedido
         </h2>
 
-        {/* Cliente */}
         <div className="mb-8">
           <h3 className="text-2xl font-semibold text-gray-700 mb-4">Cliente</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -129,7 +128,6 @@ export const InputsClient = () => {
           </div>
         </div>
 
-        {/* Produto */}
         <div className="mb-8">
           <h3 className="text-2xl font-semibold text-gray-700 mb-4">Produto</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -157,7 +155,6 @@ export const InputsClient = () => {
           </div>
         </div>
 
-        {/* Pagamentos */}
         <div className="mb-8">
           <h3 className="text-2xl font-semibold text-gray-700 mb-4">
             Pagamentos
@@ -198,7 +195,6 @@ export const InputsClient = () => {
           </div>
         </div>
 
-        {/* Botão de Envio */}
         <div className="text-center">
           <button
             onClick={handleSubmit}

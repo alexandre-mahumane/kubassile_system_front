@@ -14,13 +14,12 @@ export const login = async (username, password) => {
   }
 };
 
-// Função de refresh de token
 export const refreshToken = async () => {
   try {
     console.log("Token atual: " + getAcessToken());
     const response = await api.post("/auth/refresh-token");
     const newToken = response.data.token;
-    localStorage.setItem("accessToken", newToken); // Atualiza o token no localStorage
+    localStorage.setItem("accessToken", newToken);
     return newToken;
   } catch (error) {
     console.log(error);
@@ -28,10 +27,9 @@ export const refreshToken = async () => {
   }
 };
 
-// Função de logout
 export const logout = async () => {
   await api.post("/auth/logout");
-  localStorage.removeItem("accessToken"); // Remove o token do localStorage ao fazer logout
+  localStorage.removeItem("accessToken");
 };
 
 export const getAcessToken = () => acessToken;

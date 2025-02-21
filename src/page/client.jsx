@@ -66,7 +66,7 @@ export const ClientDetails = () => {
         <h2 className="text-3xl font-bold text-sky-600 text-center mb-6">
           Detalhes do Cliente
         </h2>
-        {/* Barra de Pesquisa e Filtros */}
+
         <div className="flex  flex-col md:flex-row justify-center md:items-center gap-4 mb-6">
           <select
             value={statusPedido}

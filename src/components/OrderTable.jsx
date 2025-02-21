@@ -125,7 +125,6 @@ export const OrderTable = () => {
           Tabela de Pedidos
         </h2>
 
-        {/* Barra de Pesquisa e Filtros */}
         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
           <input
             type="text"
@@ -165,7 +164,6 @@ export const OrderTable = () => {
           </select>
         </div>
 
-        {/* Tabela */}
         <div className="overflow-y-auto max-h-96">
           <table className="table-auto w-full border-collapse border border-gray-300">
             <thead className="bg-sky-500 text-white sticky top-0">
