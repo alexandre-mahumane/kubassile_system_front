@@ -4,6 +4,7 @@ import { Reports } from "./page/reports";
 import { Login } from "./page/login";
 import { ClientDetails } from "./page/client";
 import { Provider } from "./context/Provider";
+import PrivateRoute from "./service/PrivateRoute";
 
 function App() {
   return (
@@ -11,9 +12,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/client/:id" element={<ClientDetails />} />
+          <Route element={<PrivateRoute />}>
+            <Route path="/service" element={<Service />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/client/:id" element={<ClientDetails />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </Provider>
